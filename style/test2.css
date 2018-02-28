@@ -1,0 +1,250 @@
+@charset "utf-8";
+/* CSS Document */
+*{
+	  margin:0;
+	  padding:0;
+  }
+  #main #wtop{
+      width:100%;
+	  height:80px;
+  }
+  #main #top{
+	  height:80px;
+	  width:100%;
+	  background-color:#000;
+	  color:#FFF;
+  }
+  #main #xia{
+      height:200px;
+	  width:100%;
+	  background-color:#000;
+	  display:none;
+  }
+  #main #xia table td{
+      width:143px;
+	  height:30px;
+	  text-align:center;
+	  color:#e1e1e1; 
+	  font-size:14px;
+	  font-family:"微软雅黑";
+  }
+  #main #wtop:hover #xia{
+	  width:100%;
+	  height:233px;
+	  background-color:#000;
+	  opacity:0.7;
+	  display:block;
+	  position:relative;
+	  z-index:99;
+  }
+  #main #top table td{
+      width:100px;
+	  text-align:center;
+	  color:#e1e1e1; 
+	  font-size:16px;
+	  font-family:"微软雅黑";
+  }
+  #main #top table td span{
+      font-size:10px; 
+	  color:#575757; 
+	  font-family:"Tahoma";
+  }
+  #main #bgtop{
+      overflow:hidden;
+  }
+  #main #lgwenzi{
+	  color:#00ab88; 
+	  font-size:50px;
+	  font-weight:bold;
+	  font-family:"微软雅黑";
+	  background-image:-webkit-gradient(linear, 0 0, 0 100%, from(rgba(31,255,231,1)), to(rgba(0,171,136,1)));
+	  -webkit-background-clip:text;
+      -webkit-text-fill-color:transparent;
+	  position:absolute;
+	  left:45px;
+	  top:120px;
+  }
+  #main #lgxiao{
+      font-size:14px; 
+	  font-family:"微软雅黑";
+	  color:#e3e3e3;
+	  position:absolute;
+	  left:45px;
+	  top:200px;
+  }
+  #main #sede #bu1{
+      width:159px; 
+	  height:40px;
+	  font-size:14px;
+	  color:#1bf6cc;
+	  font-family:"微软雅黑";
+	  background-color:#000;
+	  border:2px solid #1bf6cc;
+	  position:absolute;
+	  left:45px;
+	  top:270px;
+  }
+  #main #xiazai{
+      position:absolute;
+	  left:45px;
+	  top:335px;
+  }
+  #main #tab5{
+      position:absolute;
+	  left:265px;
+	  top:335px;
+  }
+  #main #tab5 #m1{
+      position:absolute;
+	  top:25px;
+	  left:23px;
+	  text-align:center;
+  }
+  #main #tab5 #m1:hover #x1{
+      display:block;
+  }
+  #main #tab5 .p1{
+	  font-family:"微软雅黑";
+	  color:#FFF;
+	  font-size:18px;
+  }
+  #main #tab5 .p2{
+	  font-family:"微软雅黑";
+	  color:#e1e1e1;
+	  font-size:12px;
+  }
+  #main #tab5 #m2{
+      position:absolute;
+	  top:25px;
+	  left:135px;
+	  text-align:center;
+  }
+  #main #tab5 #m3{
+      position:absolute;
+	  top:25px;
+	  left:247px;
+	  text-align:center;
+  }
+  #main #tab5 #m4{
+      position:absolute;
+	  top:25px;
+	  left:359px;
+	  text-align:center;
+  }
+  #main #tab5 #m5{
+      position:absolute;
+	  top:23px;
+	  left:471px;
+	  text-align:center;
+  }
+  #main #tabri{
+      position:absolute;
+	  left:825px;
+	  top:335px;
+  }
+  #main #tabri #tou{
+      position:absolute;
+	  left:20px;
+	  top:17px;
+  }
+  #main #tabri #touw{
+      font-size:10px;
+	  color:#FFF;
+	  position:absolute;
+	  left:120px;
+	  top:20px;
+  }
+  #main #tabri #touw #span_p1{
+	  font-size:18px;
+	  font-family:"微软雅黑";
+  }
+  #main #tabri #touw #span_p1 a{
+      text-decoration:none;
+	  color:#1bf6cc;
+  }
+  #main #tabri #touw .span2{
+	  font-family:"微软雅黑";
+	  color:#e3e3e3;
+  }
+  #main #tabri #touw #span3{
+	  font-family:"微软雅黑";
+  }
+  #zhong{
+	  position:relative;
+	  font-family:"微软雅黑";
+  }
+  #zhong #gerenxinxi{
+	  margin:0px auto;
+	  margin-top:60px;
+      width:90%;
+	  height:70px;
+  }
+  #zhong #zhandouli{
+      position:absolute;
+	  left:50px;
+	  top:100px;
+  }
+  #zhong #shanchang{
+      position:absolute;
+	  left:50px;
+	  top:500px;
+  }
+  #zhong #lishi{
+      position:absolute;
+	  left:50px;
+	  top:700px;
+  }
+  #bottom{
+	  font-family:"微软雅黑";
+	  width:100%;
+	  height:238px;
+	  background-color:#f3f3f3;
+	  position:absolute;
+	  top:1700px;
+  }
+  #bottom #bot1{
+      position:absolute;
+	  top:30px;
+	  left:55px;
+  }
+  #bottom #bot2{
+      position:absolute;
+	  left:400px;
+	  top:32px;
+  }
+  #bottom #bot3{
+      position:absolute;
+	  left:1000px;
+	  top:32px;
+  }
+  #bottom #bot3 option{
+	  background-color:#FFF;
+	  font-size:15px;
+  }
+  #bottom #hr{
+      width:90%;
+	  height:5px;
+	  background-color:#e3e3e3;
+	  position:absolute;
+      left:5%;
+	  top:120px;
+  }
+  #bottom #bot4{
+	  position:absolute;
+	  top:150px;
+	  left:55px;
+  }
+  #bottom #bot5{
+	  position:absolute;
+	  left:500px;
+	  top:150px;
+	  font-size:15px;
+	  color:#666;
+  }
+  #bottom #bot5 ul{
+	  list-style:none;
+  }
+  #bottom #bot5 ul li{
+      float:left;
+  }
+  #table1{ background-color:#00ab88; color:#FFF}

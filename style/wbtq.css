@@ -1,0 +1,34 @@
+@charset "utf-8";
+/* CSS Document */
+body{ font-family:"微软雅黑"; margin:0px auto; background-color: #eeeeee}
+#div1{ width:100%;overflow:hidden; }
+/* 滚动*/
+#div2{ width:90%; height:500px; margin:0px auto;}
+	#a1{ width:780px; position:relative; top:50px; background-color:#C6C;}
+		#pi1{ width:20px; height:20px; border-radius:20px; position:absolute; top:329px; left:380px;}
+    	#pi2{ width:20px; height:20px; border-radius:20px;  position:absolute; top:329px; left:420px;}
+	#a2{ width:420px; height:360px; position:absolute; top:695px; left:862px;}
+		#a3{ width:419px; height:33px; background-color:#333333}
+			.table1{ text-align:center; color:#fff; font-size:18px;}
+		#a4{ width:419px; height:33px; position:absolute; top:43px; background-color:#dddddd}
+			.table2{ text-align:center; color:#666666; font-size:13px;}
+		#a5{ width:419px; height:283px;position:absolute; top:76px;}
+			.table3{ font-size:13px;}
+			.a{ text-align:right;}
+		/*网吧特权字*/
+		#a6{ width:90%; height:94px; background-color: #eeeeee;  position:absolute; top:1100px; left:67px}
+/*滑动图片*/
+
+#div3{ width:90%; height:450px;  margin:0px auto;}
+	.table4{ margin:0px auto}
+
+
+	#pi3{ width:43px; position:absolute; top:1350px}
+	#pi4{ width:43px; position:absolute; top:1353px;left:1238px}
+#div4{ width:90%; height:94px; background-color: #eeeeee; margin:0px auto}
+#div5{ width:90%;margin:0px auto }
+	.table5{ text-align:center}
+/*底部*/
+#kong{ widows:100% ;height:100px;}
+#div6{ width:100%; height:145px; background-color:#343434;}
+	.b{color:#FFF; position:absolute; top:2540px; left:380px; text-align:center; font-size:13px;}

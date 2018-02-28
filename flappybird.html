@@ -1,0 +1,171 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>无标题文档</title>
+<style type="text/css">
+  *{
+      padding:0;
+	  margin:0;
+  }
+  #main{
+      width:1000px;
+	  height:500px;
+	  margin:0px auto;
+	  background-color:#000;
+	  opacity:0.3;
+	  position:absolute;
+	  left:200px;
+	  top:30px;
+	  overflow:hidden;
+  }
+  #main #zhu1{
+      width:60px;
+	  height:400px;
+	  background-color:#0F0;
+	  position:absolute;
+	  left:150px;
+	  top:0px;
+  }
+  #main #zhu2{
+      width:60px;
+	  height:400px;
+	  background-color:#0F0;
+	  position:absolute;
+	  left:300px;
+	  top:100px;
+  }
+  #main #zhu3{
+      width:60px;
+	  height:400px;
+	  background-color:#0F0;
+	  position:absolute;
+	  left:450px;
+	  top:0px;
+  }
+  #main #zhu4{
+      width:60px;
+	  height:400px;
+	  background-color:#0F0;
+	  position:absolute;
+	  left:600px;
+	  top:100px;
+  }
+  #main #zhu5{
+      width:60px;
+	  height:400px;
+	  background-color:#0F0;
+	  position:absolute;
+	  left:750px;
+	  top:0px;
+  }
+  #main #bird{
+      width:30px;
+	  height:30px;
+	  background-color:#F90;
+	  position:absolute;
+	  top:240px;
+	  left:10px;
+  }
+</style>
+<script language="javascript">
+  var r = 0;
+  var ro = 100;
+  var bz = 10;
+  var int,into;
+  var mt,mto;
+  onload=function(){
+  	  var zhu1 = document.getElementById("zhu1");
+	  var zhu2 = document.getElementById("zhu2");
+	  var zhu3 = document.getElementById("zhu3");
+	  var zhu4 = document.getElementById("zhu4");
+	  var zhu5 = document.getElementById("zhu5");
+	  
+  }
+  function huanjs(){
+	  r--;
+      zhu1.style.top = r+"px";
+	  zhu3.style.top = r+"px";
+	  zhu5.style.top = r+"px";
+	  if(r==-300){
+	      clearInterval(int);
+		  mt = setInterval("huanjx()",10);
+	  }
+  }
+  function huanjx(){
+	  r++;
+      zhu1.style.top = r+"px";
+	  zhu3.style.top = r+"px";
+	  zhu5.style.top = r+"px";
+	  if(r==0){
+	      clearInterval(mt);
+		  int = setInterval("huanjs()",10);
+	  }
+  }
+  int = setInterval("huanjs()",10);
+  function huanos(){
+	  ro++;
+      zhu2.style.top = ro+"px";
+	  zhu4.style.top = ro+"px";
+	  if(ro==400){
+	      clearInterval(into);
+		  mto = setInterval("huanox()",10);
+	  }
+  }
+  function huanox(){
+	  ro--;
+      zhu2.style.top = ro+"px";
+	  zhu4.style.top = ro+"px";
+	  if(ro==100){
+	      clearInterval(mto);
+		  into = setInterval("huanos()",10);
+	  }
+  }
+  into = setInterval("huanos()",10);
+  onkeydown=function fei(){
+	  var niao = document.getElementById("bird");
+	  bz = bz + 10;
+	  niao.style.left = bz+"px";
+  }
+  function pan(){
+      if(bz>120&&bz<210&&r>-160&&r<0){
+	      clearInterval(inta)
+		  alert("你输了");
+	  }else if(bz>270&&bz<360&&ro>150&&ro<270){
+	      clearInterval(inta)
+		  alert("你输了");
+	  }else if(bz>420&&bz<510&&r>-160&&r<0){
+	      clearInterval(inta)
+		  alert("你输了");
+	  }else if(bz>570&&bz<660&&ro>150&&ro<270){
+	      clearInterval(inta)
+		  alert("你输了");
+	  }else if(bz>720&&bz<810&&r>-160&&r<0){
+	      clearInterval(inta)
+		  alert("你输了");
+	  }else if(bz==1000){
+	      clearInterval(inta)
+		  alert("你赢了");
+	  }
+  }
+  var inta = setInterval("pan()",1);
+</script>
+</head>
+
+<body>
+  <div id="main">
+    <div id="zhu1">
+    </div>
+    <div id="zhu2">
+    </div>
+    <div id="zhu3">
+    </div>
+    <div id="zhu4">
+    </div>
+    <div id="zhu5">
+    </div>
+    <div id="bird">
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,56 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>无标题文档</title>
+<script language="javascript">
+  alert("点击第一个按钮停止行走，点击第二个按钮开始行走，点击第三个按钮跳跃")
+  var r = 0;
+  var int; 
+  function tiao(){
+      var lu =  document.getElementById("lu");
+	  var dong = document.getElementById("dong");
+	  var jing = document.getElementById("jing");
+	  if(r<800){
+	      lu.style.marginLeft = ""+(r+1)+"px";
+		  if(r==600){
+			  clearInterval(int);
+			  dong.src = "img/zha.gif";
+			  jing.style.display = "none";
+			  document.getElementById("jixu").disabled = false;
+		  }
+		  r++;
+	  }else{
+	      r = r - 800;
+	  }
+  }
+  function ting(){
+      clearInterval(int);
+	  document.getElementById("ting").disabled = true;
+	  document.getElementById("jixu").disabled = false;
+  }
+  function jixu(){
+	  var dong = document.getElementById("dong");
+	  var jing = document.getElementById("jing");
+	  dong.src = "img/p1.gif";
+	  jing.style.display = "block";
+      int = setInterval("tiao()",10);
+	  document.getElementById("jixu").disabled = true;
+	  document.getElementById("ting").disabled = false;
+  }
+  function beng(){
+      r = r + 100;
+  }
+</script>
+</head>
+
+<body>
+<div id="lu">
+    <img src="img/p1.gif" id="dong" />
+  <div id="dian" style="position:absolute; left:617px; top:80px;"><img src="img/SummonerDot.png" id="jing" /></div>
+  </div>
+  <input type="image" src="img/SummonerExhaust.png" id="ting" onClick="ting();" style="position:absolute; left:30px; top:150px;"/><br />
+  <input type="image" src="img/SummonerHaste.png" id="jixu" onClick="jixu();" style="position:absolute; left:130px; top:150px;"/><br />
+  <input type="image"  src="img/SummonerFlash.png" id="beng" onClick="beng();" style="position:absolute; left:230px; top:150px;"/>
+</body>
+</html>

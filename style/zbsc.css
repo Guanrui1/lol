@@ -1,0 +1,37 @@
+@charset "utf-8";
+/* CSS Document */
+body{ font-family:"微软雅黑";}
+#div1{ width:90%; height:174px;margin:0px auto}
+	#a1{ width:100%; height:72px;}
+		.s{ position:absolute; left:1228px; top:38px}
+		.v{ position:absolute; left:930px; top:38px}
+	#b1{ width:100%; height:60px; background-color:#000; margin-top:20px;}
+		#b1 table{ text-align:center;}
+			#b1 table td a{ text-decoration:none; color:#FFF;}
+				.t{ position:absolute;top:115px;}
+#div2{ width:90%; margin:0px auto}
+ #pi1{ width:20px; height:20px; border-radius:20px; position:absolute; left:560px; top:650px; z-index:100}
+ #pi2{ width:20px; height:20px; border-radius:20px; position:absolute; left:600px; top:650px; z-index:100}
+ #pi3{ width:20px; height:20px; border-radius:20px; position:absolute; left:640px; top:650px; z-index:100}
+ #pi4{ width:20px; height:20px; border-radius:20px; position:absolute; left:680px; top:650px; z-index:100}
+#div3{ width:90%; height:780px;margin:0px auto}
+	#a3{ width:594px; height:745px; position:absolute; top:700px;}
+	#b3{width:586px; height:368px; position:absolute; top:700px; left:680px;}
+	#c3{width:586px; height:368px; position:absolute; top:1077px; left:680px;}
+
+#div4{ width:90%; height:300px;margin:0px auto}
+	#a4{ width:333px; height:260px; float:left}
+	#b4{ width:333px; height:260px; float:left;position:absolute; left:500px;}
+	#c4{ width:333px; height:260px; float:left; position:absolute; left:930px;}
+#div5{ width:100%; height:460px; background-color:#000;margin:0px auto;}
+	#a5{ width:100%; height:52px; background-color:#222222}
+		#a5 table td{ color:#FFF; font-size:18px; text-align:center;}
+			#a5 table td span{ position:relative; top:-10px;}
+	#b5{ width:100%; height:223px; margin:0px auto; color:#FFF}
+		#b5 ul li{color:#999; font-size:13px;}
+			.w{ text-indent:20px;}
+			#b5 a{ text-decoration:none; color:#999;}
+	#c5{width:100%; height:128px; margin:0px auto;color:#999; }
+		#c5 table{font-size:13px; text-align:center;margin:0px auto;}
+		
+
